@@ -1,0 +1,26 @@
+@import './utils/colors';
+.sidebar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: map-get($colors, $key: 'sidebarBackground');
+    display: block;
+    height: 100vh;
+    width: 20%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.sidebarList {
+    display: flex;
+    flex-direction: column;
+    &>a {
+        color: #212121;
+        text-decoration: none;
+        transition: all ease-in-out 0.2s;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
